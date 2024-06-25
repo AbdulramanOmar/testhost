@@ -1,0 +1,127 @@
+.tests {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.tests .test-content {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.tests .test-list {
+  position: relative;
+  flex: 1 1 43%;
+  width: 100%;
+}
+.tests .test-prarg {
+  position: relative;
+  border-bottom: 1px solid var(--sand-color);
+  margin: 20px 0 30px;
+}
+.tests .test-prarg::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: var(--black-color);
+  border-radius: 50%;
+  left: 0;
+  top: 25px;
+}
+.tests .test-prarg::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: var(--mobs-color);
+  border-radius: 50%;
+  left: 15px;
+  top: 25px;
+}
+.tests .test-prarg > span {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--sand-color);
+  left: 0;
+  top: 10px;
+}
+.tests .test-prarg h2 {
+  margin: 0 30px;
+  font-weight: 400;
+  line-height: 1;
+}
+.tests .test-prarg p {
+  margin: 20px 30px;
+  font-size: 12px;
+  line-height: 1.2;
+  color: #777;
+}
+.tests .test-list svg {
+  position: absolute;
+  right: -10px;
+  top: -5px;
+  font-size: 34px;
+  border-radius: 50%;
+  background: var(--black-color);
+  padding: 2px;
+  color: var(--soft-cloud-color);
+}
+.tests .test-img {
+  flex: 1 1 32%;
+  width: 100%;
+  text-align: center;
+}
+.tests .test-img img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+.tests .test-text {
+  flex: 1 1 30%;
+  width: 100%;
+}
+.tests .test-text h1 {
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 1.2;
+}
+.tests .test-text p {
+  color: #777;
+  text-transform: capitalize;
+  line-height: 1.4;
+  margin: 15px 0;
+}
+.tests .test-text button {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-transform: capitalize;
+  transition: 0.5s;
+  margin: 10px 15px;
+  cursor: pointer;
+  background-color: var(--black-color);
+  color: white;
+}
+.tests .test-text button:hover {
+  color: var(--black-color);
+  background-color: var(--soft-cloud-color);
+}
+@media (max-width: 991px) {
+  .tests .test-content {
+    flex-wrap: wrap;
+  }
+  .test-img {
+    margin: auto;
+  }
+  .test-text {
+    margin: auto;
+  }
+  .test-list {
+    margin: auto;
+  }
+}
+@media (max-width: 767px) {
+  .tests .test-content {
+    flex-direction: column;
+  }
+}

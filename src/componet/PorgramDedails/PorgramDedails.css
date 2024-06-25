@@ -1,0 +1,119 @@
+.details {
+  padding-bottom: 50px;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  min-height: 70vh;
+  overflow: hidden;
+}
+.details::after {
+  content: "";
+  position: absolute;
+  width: 700px;
+  border-radius: 50%;
+  background-color: var(--mobs-color);
+  left: -25%;
+  top: -109%;
+  z-index: -1;
+  height: 700px;
+}
+.details::before {
+  content: "";
+  position: absolute;
+  width: 700px;
+  border-radius: 50%;
+  background-color: var(--sand-color);
+  right: -26%;
+  bottom: -97%;
+  z-index: -1;
+  height: 700px;
+}
+.details-content {
+  width: 70%;
+  margin: auto;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: var(--sand-color);
+  padding: 20px;
+}
+.details-content .details-img {
+  width: 100%;
+}
+.details-content .details-img img {
+  max-width: 100%;
+  border-radius: 20px;
+}
+.details-content .details-text {
+  flex: 1 1 100%;
+}
+.details-content .details-text h1 {
+  font-size: 48px;
+  color: var(--black-color);
+  line-height: 1.1;
+}
+.details-content .details-text p {
+  color: var(--text-color);
+  line-height: 1.66;
+  margin: 20px 0 10px;
+}
+.details-content .details-price {
+  background-color: var(--soft-cloud-color);
+  border-radius: 10px;
+  padding: 20px 10px;
+}
+.details-content .details-text .details-price > div {
+  display: flex;
+  align-items: center;
+  padding: 0px 20px 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.181);
+}
+
+.details-content .details-price > div span {
+  color: var(--black-color);
+  font-size: 32px;
+  margin: 0 10px 0 30px;
+}
+.details-content .details-price > div button {
+  padding: 7px 20px;
+  border: none;
+  background-color: var(--mobs-color);
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.details-content .details-steps {
+  padding: 20px;
+  list-style: none;
+}
+.details-content .details-steps li {
+  display: flex;
+  align-items: center;
+}
+.details-content .details-steps li span {
+  margin: 0 10px;
+  font-size: 20px;
+}
+.details-content .details-steps li svg {
+  animation: drop 1s 1 ease-out;
+}
+@keyframes drop {
+  0% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@media (max-width: 991px) {
+  .details-content {
+    flex-direction: column;
+  }
+}
+@media (max-width: 575px) {
+  .details-content .details-price {
+    padding: 0 !important;
+  }
+}

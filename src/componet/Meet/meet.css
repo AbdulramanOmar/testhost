@@ -1,0 +1,66 @@
+.meet {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.meet-content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.meet .meet-imgs {
+    width: 100%;
+    flex: 1 40%;
+    position: relative;
+}
+.meet .meet-imgs img {
+    max-width: 100%;
+    border-radius: 25px;
+}
+.meet .meet-text {
+    flex: 1 1 70%
+}
+.meet .meet-text h1 {
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 1.1;
+}
+.meet .meet-text h2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--sand-color);
+    padding: 25px 15px;
+    margin: 40px 0;
+    font-weight: 400;
+    border-radius: 10px;
+}
+.meet .meet-text h2 span {
+    font-size: 24px;
+    line-height: 1.1;
+    flex: 1 1 70%;
+}
+.meet .meet-text div {
+    flex: 1 1 4%;
+}
+.meet .meet-text h2 svg {
+    font-size: 42px;
+    padding: 5px;
+    color: var(--soft-cloud-color);
+    background-color: var(--black-color);
+    border-radius: 50%;
+    text-align: right;
+}
+.meet .meet-text p {
+    color: var(--text-color);
+    line-height: 1.6;
+}
+@media (max-width:991px) {
+    .meet-content {
+        flex-direction: column-reverse;
+    }
+}
+@media (max-width:575px) {
+    .meet .meet-text h1 {
+        font-size: 28px !important;
+    }
+}

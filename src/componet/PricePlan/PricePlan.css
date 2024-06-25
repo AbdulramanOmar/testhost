@@ -1,0 +1,118 @@
+.price {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.price-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.price-content .price-card {
+  flex-grow: 1;
+  background-color: var(--sand-color);
+  border-radius: 20px;
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+}
+.price-content .price-card::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 57%;
+    background: var(--mobs-color);
+    left: 0;
+    top: 0;
+    z-index: -1;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    transition: 0.33s;
+}
+.price-content .price-card:hover::after {
+  height: 100%;
+  border-radius: 20px;
+}
+.price-content .price-card:hover  ul li {
+  color: white !important;
+}
+.price-content .price-card::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 43%;
+    background: white;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.top-rate {
+  margin-bottom: 20px;
+}
+.price-content .price-card:hover::before {
+  height: 100%;
+  border-radius: 20px;
+  z-index: -1;
+}
+.price-card:hover {
+  cursor: pointer;
+}
+.price-content .price-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  box-shadow: 0px 2px 6px 0 #8c8888;
+}
+.price-card h2 {
+  font-weight: 400;
+  color: white;
+}
+.price-content .price-card span {
+  font-size: 32px;
+  color: var(--soft-cloud-color);
+  margin: 0 20px;
+}
+.price-card ul li {
+  display: block;
+  padding: 10px;
+}
+.price-card ul li svg {
+  font-size: 22px;
+  margin: 0px 10px -5px;
+  color: black !important;
+}
+.price button {
+  display: block;
+  width: fit-content;
+  margin: 10px auto;
+  padding: 7px 20px;
+  border-radius: 30px;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: var(--mobs-color);
+  color: white !important;
+  border: none;
+}
+.price article {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 991px) {
+  .price .price-content {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)) !important;
+    gap: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .price .price-content {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)) !important;
+    gap: 20px;
+  }
+}
+.light {
+    color: white !important;
+}

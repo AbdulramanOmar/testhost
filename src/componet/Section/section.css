@@ -1,0 +1,107 @@
+.section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    overflow: hidden;
+}
+.section-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-direction: row-reverse;
+}
+.section-content .section-img {
+    width: 100%;
+    position: relative;
+}
+.section-img img {
+    max-width: 100%;
+    border-radius: 25px;
+}
+.section-img1 {
+    width: 300px;
+    position: absolute;
+    border-radius: 40px;
+    top: 0;
+}
+.section-img2 {
+    width: 250px;
+    position: absolute;
+    border-radius: 20px;
+    bottom: 0;
+}
+.section-content .section-text {
+    flex:  1 1 100%;
+}
+.section-text h1 {
+    font-size: 52px;
+    color: var(--black-color);
+    line-height: 1.2;
+    font-weight: 400;
+}
+.section-text p {
+    color: #777;
+    line-height: 2;
+    margin: 45px 0 14px;
+}
+.section-text button {
+    padding: 15px 25px;
+    background-color: var(--black-color);
+    color: white;
+    border-radius: 30px;
+    border: none;
+    transition: 0.4s;
+    margin: 20px ;
+}
+.section-text button > a {
+    color: white;
+}
+.section-text button:hover {
+    background-color: var(--background-color);
+    color: var(--black-color);
+}
+@media(max-width:991px) {
+    .section-content {
+        flex-direction: column !important;
+    }
+    .section-img1 {
+        width: 300px !important;
+        top: 0px !important;
+    }
+    .section-img2 {
+        width: 250px !important;
+        bottom: 0px !important;
+    }
+}
+@media(max-width:1200px){
+    .section-img1 {
+        width: 230px;
+        top: -30px;
+    }
+    .section-img2 {
+        width: 170px;
+        bottom: -30px;
+    }
+}
+@media(max-width:767px){
+    .section-img1 {
+        width: 230px !important;
+        top: -30px !important;
+    }
+    .section-img2 {
+        width: 170px !important;
+        bottom: -30px !important;
+    }
+}
+@media(max-width:575px){
+    .section-img1 {
+        width: 180px !important;
+        top: -30px !important;
+        left: 0 !important;
+        right: 0  !important;
+    }
+    .section-img2 {
+        width: 150px !important;
+        bottom: -30px !important;
+        right: 0 !important;
+    }
+}

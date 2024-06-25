@@ -1,0 +1,41 @@
+.notice {
+    padding-top: 50px;
+    background-image: url("../Assent/5ddsjgfier.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    overflow: hidden; 
+}
+
+.notice-content {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    box-sizing: border-box; 
+}
+
+.notice-content h4 {
+    font-size: 36px;
+    font-weight: 400;
+    text-align: center;
+    margin: 70px 50px 0;
+    word-wrap: break-word; 
+    overflow-wrap: break-word; 
+}
+
+@media (max-width: 767px) {
+
+    .notice-content h4 {
+        font-size: 24px; 
+        margin: -24px 10px 0;
+    }
+    .notice-content {
+        padding:10px;
+    }
+
+    .notice {
+        padding-top: 20px;
+        padding-bottom: 0px !important;
+        background-size: auto; 
+    }
+}

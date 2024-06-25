@@ -1,0 +1,34 @@
+.pod {
+    padding-bottom: 50px;
+}
+.pod .container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-top: 40px;
+    text-align: center;
+}
+.pod .pod-img {
+    width: 100%;
+}
+.pod .pod-img img {
+    max-width: 100%;
+}
+.pod .pod-text {
+    flex: 1 1 100%;
+}
+.pod .pod-text h2 {
+    font-size: 64px;
+}
+.pod .pod-text p {
+    color: var(--text-color);
+    line-height: 1.5;
+    margin: 20px 0 0;
+    text-transform: capitalize;
+    font-size: 22px;
+}
+@media (max-width:575px) {
+    .pod .container {
+        flex-direction: column;
+    }
+}

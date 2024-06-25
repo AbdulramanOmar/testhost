@@ -1,0 +1,49 @@
+.message {
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+.message-content {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  margin: 0 auto 20px;
+}
+.message-content input {
+  width: 90%;
+  padding: 11px 15px;
+  font-size: 24px;
+  border: none;
+  background: white;
+  height: 60px;
+}
+.message-content button {
+  border: none;
+  background-color: var(--mobs-color);
+  color: white;
+  cursor: pointer;
+  height: 60px;
+  font-size: 22px;
+  flex: 1 1 16%;
+  padding: 5px 0;
+}
+.message-check {
+  width: 80%;
+  margin: auto;
+}
+@media (max-width: 991px) {
+  .message-content button {
+    flex: 1 1 30%;
+  }
+}
+@media (max-width: 575px) {
+  .message-content {
+    width: 100%;
+  }
+  .message-check {
+    width: 100%;
+  }
+  .message-content button {
+    flex: 1 1 40%;
+  }
+}

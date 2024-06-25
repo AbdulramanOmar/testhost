@@ -1,0 +1,48 @@
+.product table {
+    width: 90%;
+    margin: auto;
+    padding-top: 30px;
+    text-align: center !important;
+  }
+  .product {
+    flex: 1 1 80%;
+    padding: 20px;
+  }
+  .product table thead td {
+    color: #77777761;
+    border-bottom: 1px solid #77777738;
+    padding-bottom: 20px;
+  }
+  .product table tbody td {
+    padding: 20px;
+    margin: 15px;
+  }
+  .product table tbody td h4 {
+    font-weight: 400;
+    background: #ed2a2a;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  .product table tbody td h3 {
+    font-weight: 400;
+    background: #2196f3;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  .product table tbody td h4:hover,
+  .product tbody h3:hover {
+    transform: scale(1.03) rotate(1deg);
+  }
+  @media (max-width:991px) {
+    .product  {
+      width: 100% !important;
+      margin: 0px !important;
+      overflow-x: scroll;
+    }
+  }
